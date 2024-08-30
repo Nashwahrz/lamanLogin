@@ -7,14 +7,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/loginbag"
+    android:background="@drawable/bag2"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="50dp"
+        android:outlineSpotShadowColor="@color/white"
         app:cardElevation="20dp">
 
         <LinearLayout
@@ -23,7 +24,9 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
-            android:background="#FFCECE">
+            android:background="#131C6B"
+
+            >
             
             <TextView
                 android:layout_width="match_parent"
@@ -34,7 +37,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/white"/>
 
 
             
@@ -47,8 +50,9 @@
 
                   android:padding="8dp"
                   android:hint="Username"
+                  android:textColorHint="@color/white"
                   android:drawableLeft="@drawable/baseline_person_24"
-                  android:textColor="@color/black"
+                  android:textColor="@color/white"
                   android:drawablePadding="8dp"/>
 
             <EditText
@@ -60,8 +64,9 @@
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:hint="Password"
+                android:textColorHint="@color/white"
                 android:drawableLeft="@drawable/baseline_lock_24"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:drawablePadding="8dp"/>
 
             <TextView
@@ -71,7 +76,7 @@
                 android:textAlignment="center"
                 android:text="Lupa Password?"
                 android:fontFamily="@font/poppinsmedium"
-                android:textColor="#6D0303"
+                android:textColor="#C14307"
                 android:textSize="5pt"
                 />
             <TextView
@@ -81,7 +86,7 @@
                 android:textAlignment="center"
                 android:text="Dont have account sign up here"
                 android:fontFamily="@font/poppinsmedium"
-                android:textColor="#6D0303"
+                android:textColor="#F4C8C8"
                 android:textSize="5pt"
                 />
 
@@ -90,6 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"
